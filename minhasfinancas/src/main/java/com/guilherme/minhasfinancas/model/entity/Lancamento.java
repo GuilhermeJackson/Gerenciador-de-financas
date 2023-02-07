@@ -5,6 +5,9 @@ import java.time.LocalDate;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
+import com.guilherme.minhasfinancas.model.enums.StatusLancamento;
+import com.guilherme.minhasfinancas.model.enums.TipoLancamento;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
