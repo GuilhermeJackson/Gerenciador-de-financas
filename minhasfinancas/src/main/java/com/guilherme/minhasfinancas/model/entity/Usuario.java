@@ -1,5 +1,11 @@
 package com.guilherme.minhasfinancas.model.entity;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+import com.guilherme.minhasfinancas.model.enums.StatusLancamento;
+import com.guilherme.minhasfinancas.model.enums.TipoLancamento;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,6 +14,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,12 +23,7 @@ import lombok.ToString;
 
 @Entity
 @Table( name = "usuario", schema = "financas")
-@Getter
-@Setter
-@EqualsAndHashCode
-@ToString
-@NoArgsConstructor //Gera construtor vazio
-@AllArgsConstructor // Gera construtor com todas as propriedades
+@Data
 @Builder
 //@Data 
 public class Usuario {

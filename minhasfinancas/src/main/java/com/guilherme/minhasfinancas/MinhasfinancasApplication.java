@@ -8,7 +8,7 @@ public class MinhasfinancasApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MinhasfinancasApplication.class, args);
-		System.out.print("TESTE");
+		
 	}
 
 }
